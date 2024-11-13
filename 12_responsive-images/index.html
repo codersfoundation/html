@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Responsive images</title>
+</head>
+<body>
+
+    <!-- Why responsive images? -->
+
+    <h1>Responsive images</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit consequatur deleniti obcaecati aliquid? Nesciunt, velit sapiente autem, iste pariatur delectus ut animi ipsum recusandae officia tempore doloremque corporis cupiditate repudiandae.</p>
+
+    <img src="images/cat.jpg" alt="Cat" style="width:100%;">
+
+    <!-- How do you create responsive images? -->
+
+        <!-- Resolution switching: Different sizes -->
+        <img
+        sizes="(max-width: 400px) 400px, 100vw"
+            srcset="
+                images/cat-200w.jpg 200w,
+                images/cat-400w.jpg 400w,
+                images/cat-600w.jpg 600w,
+                images/cat-800w.jpg 800w,
+                images/cat-1200w.jpg 1200w
+            "
+            src="images/cat.jpg" 
+            alt="Cat">
+
+        <!-- Art direction -->
+         <picture>
+            <source media="(max-width: 810px)" srcset="images/cat-640v.jpg">
+            <source media="(min-width: 1200px)" srcset="images/cat-1200w.jpg">
+            <img src="images/cat.jpg" alt="Cat" style="width:100%;">
+         </picture>
+
+   
+</body>
+</html>
