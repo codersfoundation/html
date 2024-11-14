@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Table advanced features</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+        tr,th,td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Adding a caption to your table with <caption> -->
+    <table>
+        <caption>Spending Record</caption>
+        <tr>
+            <th>Purchase</th>
+            <th>Date</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td>14/11</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>14/11</td>
+            <td>50000</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Adding structure with <thead>, <tbody>, and <tfoot> -->
+    <table>
+        <caption>Spending Record</caption>
+        <thead>
+            <tr>
+                <th>Purchase</th>
+                <th>Date</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mobile</td>
+                <td>14/11</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>14/11</td>
+                <td>50000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Sum</td>
+                <td>60000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <!-- Nesting Tables -->
+    <table>
+        <caption>Spending Record</caption>
+        <thead>
+            <tr>
+                <th>Purchase</th>
+                <th>Date</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mobile</td>
+                <td>14/11</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>14/11</td>
+                <td>50000</td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Memory Card</td>
+                            <td>Pendrive</td>
+                            <td>Mobile Cover</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>15/12</td>
+                <td>15000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Sum</td>
+                <td>75000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+   
+</body>
+</html>
