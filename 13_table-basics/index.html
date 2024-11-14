@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Table basics</title>
+    <style>
+        table {
+            border-collapse: collapse; 
+        }
+        tr,th,td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- What is a table? -->
+     <table>
+        <tr>
+            <td>Rahim</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Karim</td>
+            <td>35</td>
+        </tr>
+     </table>
+
+     <br>
+
+    <!-- When should you NOT use HTML tables? -->
+     <table>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+     </table>
+
+     <br>
+
+    <!-- Adding headers with <th> elements -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Rahim</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Karim</td>
+            <td>35</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Allowing cells to span multiple rows and columns -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Rahim</td>
+            <td>01777777777</td>
+        </tr>
+        <tr>
+            <td>01666666666</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td colspan="2">Rahim</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>01777777777</td>
+            <td>01666666666</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Providing common styling to columns -->
+    <table>
+        <colgroup>
+            <col style="background-color: yellow;" span="2">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Rahim</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Karim</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+   
+</body>
+</html>
