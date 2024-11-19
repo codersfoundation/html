@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms - Basic native form controls</title>
+</head>
+<body>
+
+    <!-- Text input fields -->
+
+        <form action="contact-page" method="post">
+            <fieldset>
+                <!-- Single line text fields -->
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" name="user_name" autofocus>
+                </p>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" value="Moshiur" name="user_name" readonly>
+                </p>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" value="Moshiur" name="user_name" disabled>
+                </p>
+
+                <!-- Password field -->
+                <p>
+                    <label for="pw">Password:</label>
+                    <input type="password" id="pw" placeholder="Enter your password" name="user_pass" maxlength="5">
+                </p>
+                <p>
+                    <label for="msg">Message:</label>
+                    <textarea name="your_msg" id="msg" spellcheck></textarea>
+                </p>
+
+                <!-- Checkbox -->
+                <p>
+                    <input type="checkbox" name="agree" id="agree" value="yes" required>
+                    <label for="agree">I have read and agree with the terms and conditions</label>
+                </p>
+
+                <!-- Radio button -->
+                <p>
+                    <input type="radio" id="male" name="gender" checked>
+                    <label for="male">Male</label>
+                </p>
+                <p>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </p>
+                <p>
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">Other</label>
+                </p>
+
+                <!-- File picker -->
+                <p>
+                    <input type="file" name="file" id="file" accept="image/*" multiple>
+                </p>
+                
+                <!-- Actual buttons -->
+                <input type="submit" value="Send message">
+                <input type="reset" value="Reset this form">
+                <input type="button" value="Do nothing without JavaScript">
+
+                <br><br>
+
+                <button type="submit">Send message</button>
+                <button type="reset">Reset this form</button>
+                <button type="button">Do nothing without JavaScript</button>
+            </fieldset>
+        </form>
+
+    <!-- Common attributes -->
+
+</body>
+</html>
