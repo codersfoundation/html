@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms - How to structure a web form</title>
+</head>
+<body>
+
+    <!-- Common HTML structures used with forms -->
+
+    <!-- The <form> element -->
+    <form action="contact-page" method="post">
+        <!-- The <fieldset> and <legend> elements -->
+        <fieldset>
+            <legend>Contact us</legend>
+            <p>
+                <label for="name">Name: <strong><span aria-label="required">*</span></strong></label>
+                <input type="text" id="name" name="user_name" required>
+            </p>
+            <p>
+                <label for="mail">Email:</label>
+                <input type="email" id="email" name="user_email" value="Enter your email address">
+            </p>
+            <p>
+                <label for="pw">Password: <strong><span aria-label="required">*</span></strong></label>
+                <input type="password" id="pw" required>
+            </p>
+            <p>
+                <label for="color">Choose your favourite color: </label>
+                <select name="user_fav_color" id="color">
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </p>
+            <!-- The <label> element -->
+            <p>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </p>
+            <p>
+                <label for="msg">Message</label>
+                <textarea name="user_message" id="msg">Write your message here</textarea>
+            </p>
+            <p>
+                <button type="submit">Send message</button>
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>
