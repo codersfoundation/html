@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms - Other form features</title>
+    <style>
+        .message {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="contact-page" method="post">
+
+        <!-- Single-line text fields -->
+         <p>
+            <label for="">Username:</label>
+            <p>Username must be lowercase and 4-8 characters in length.</p>
+            <input type="text" pattern="[a-z]{4,8}" maxlength="8" size="50">
+         </p>
+
+        <!-- Multi-line text fields -->
+        <p>
+            <label for="msg">Message:</label>
+            <textarea name="msg" id="msg"></textarea>
+        </p>
+
+            <!-- Controlling multi-line rendering -->
+            <p>
+                <label for="msg">Message:</label>
+                <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+            </p>
+
+            <!-- Controlling textarea resizability -->
+            <p>
+                <label for="msg">Message:</label>
+                <textarea name="msg" id="msg" cols="50" rows="10" class="message"></textarea>
+            </p>
+
+        <!-- Drop-down controls -->
+
+            <!-- Select box -->
+             <p>
+                <label for="fruits">Choose your favourite fruit:</label>
+                <select name="fruits" id="fruits" size="2">
+                    <option value="banana">Banana</option>
+                    <option value="mango" selected>Mango</option>
+                    <option value="apple" selected>Apple</option>
+                </select>
+             </p>
+
+            <!-- Using optgroup -->
+             <p>
+                <select name="groups" id="groups">
+                    <optgroup label="Fruits">
+                        <option value="banana">Banana</option>
+                        <option value="mango">Mango</option>
+                    </optgroup>
+                    <optgroup label="Vegetables">
+                        <option value="carrot">Carrot</option>
+                        <option value="potato" selected>Potato</option>
+                    </optgroup>
+                </select>
+             </p>
+
+            <!-- Multiple choice select box -->
+            <p>
+                <select name="groups" id="groups" multiple>
+                    <optgroup label="Fruits">
+                        <option value="banana">Banana</option>
+                        <option value="mango">Mango</option>
+                    </optgroup>
+                    <optgroup label="Vegetables">
+                        <option value="carrot">Carrot</option>
+                        <option value="potato" selected>Potato</option>
+                    </optgroup>
+                </select>
+             </p>
+
+            <!-- Autocomplete box -->
+             <p>
+                <label for="browser">What's your favourite browser?</label>
+                <input type="text" name="browser" id="browser" list="browserslist">
+                <datalist id="browserslist">
+                    <option>Mozilla Firefox</option>
+                    <option>Google Chrome</option>
+                    <option>Opera</option>
+                </datalist>
+             </p>
+
+        <!-- Other form features -->
+
+            <!-- Meters and progress bars -->
+             <p>
+                <meter value="75" min="0" max="100"></meter>
+             </p>
+
+             <p>
+                <progress max="100" value="75">75/100</progress>
+             </p>
+
+        <p>
+            <input type="submit" value="Send">
+        </p>
+
+    </form>
+
+</body>
+</html>
