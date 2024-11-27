@@ -21,3 +21,11 @@
 - [Facebook](https://www.facebook.com/codermoshiur)
 - [Community](https://www.facebook.com/groups/codersfoundation)
 - [Blog](https://codersfoundation.com/)
+
+---
+
+### Description
+
+📺 [YouTube Playlist](https://www.youtube.com/playlist?list=PLm64fbD5Onxtzo8gbLaPfOxSu6lYZlFgK) for this repository.
+
+🚀 This repository contains all the resources referenced in the HTML — Structuring the web course.
