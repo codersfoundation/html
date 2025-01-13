@@ -14,7 +14,7 @@
 
 🚀 Want to master Front-end development and WordPress?
 
-- [Check out my complete course](https://cutt.ly/WeLthSrQ)
+- [Check out my complete course](https://cutt.ly/wp-pro)
 
 ✋ Stay Connected:
 
